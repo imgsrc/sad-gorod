@@ -273,8 +273,6 @@ p {
  * Flexslider
  */
 
-
-
 #fh5co-home {
   min-height: 700px;
   background: $brand-white url(../img/loader.gif) no-repeat center center;
@@ -549,7 +547,7 @@ p {
             padding: 0 20px;
           }
           p {
-            font-size: 40px;
+            font-size: 25px;
             line-height: 1.5;
             @media screen and (max-width: $screen-sm) {
               font-size: 20px;
@@ -594,6 +592,9 @@ p {
         }
       }
     }
+  }
+  .reviews_btn {
+    z-index: 250;
   }
 }
 
@@ -821,7 +822,7 @@ p {
         width: 64px;
         position: absolute;
         content: "";
-          background: url(../img/icons/fruit.png) no-repeat;
+        background: url(../img/icons/fruit.png) no-repeat;
         top: 0;
         left: 50%;
         margin-top: -50px;
@@ -1007,11 +1008,11 @@ p {
       padding-top: 30px !important;
       color: $brand-white;
       &:before, &::before {
-        height: 64px;
-        width: 49px;
+        height: 65px;
+        width: 65px;
         position: absolute;
         content: "";
-        background: url(../img/icons/city.png) no-repeat;
+        background: url(../img/icons/technology.png) no-repeat;
         top: 0;
         left: 50%;
         margin-top: -50px;
@@ -1104,7 +1105,7 @@ p {
         width: 61px;
         position: absolute;
         content: "";
-        background: url(../img/icons/city.png) no-repeat;
+        background: url(../img/icons/global-commerce.png) no-repeat;
         top: 0;
         left: 50%;
         margin-top: -50px;
@@ -1134,7 +1135,13 @@ p {
       margin: 0 0 1.5em 0;
       padding-left: 50px;
       list-style: none;
-
+      img {
+        left: 0;
+        position: absolute;
+        top: 0.4em;
+        height: 21px;
+        color: #5e493a;
+      }
       i {
         position: absolute;
         top: .4em;

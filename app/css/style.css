@@ -390,7 +390,7 @@ p {
         #fh5co-sayings .flexslider .slides li blockquote {
           padding: 0 20px; } }
       #fh5co-sayings .flexslider .slides li blockquote p {
-        font-size: 40px;
+        font-size: 25px;
         line-height: 1.5; }
         @media screen and (max-width: 768px) {
           #fh5co-sayings .flexslider .slides li blockquote p {
@@ -424,6 +424,8 @@ p {
         -webkit-box-shadow: none;
                 box-shadow: none;
         border: 2px solid #fb6e14; }
+  #fh5co-sayings .reviews_btn {
+    z-index: 250; }
 
 #fh5co-featured {
   padding: 7em 0;
@@ -763,11 +765,11 @@ p {
     padding-top: 30px !important;
     color: #fff; }
     #fh5co-events .fh5co-heading .heading:before, #fh5co-events .fh5co-heading .heading::before {
-      height: 64px;
-      width: 49px;
+      height: 65px;
+      width: 65px;
       position: absolute;
       content: "";
-      background: url(../img/icons/city.png) no-repeat;
+      background: url(../img/icons/technology.png) no-repeat;
       top: 0;
       left: 50%;
       margin-top: -50px;
@@ -841,7 +843,7 @@ p {
       width: 61px;
       position: absolute;
       content: "";
-      background: url(../img/icons/city.png) no-repeat;
+      background: url(../img/icons/global-commerce.png) no-repeat;
       top: 0;
       left: 50%;
       margin-top: -50px;
@@ -862,6 +864,12 @@ p {
       margin: 0 0 1.5em 0;
       padding-left: 50px;
       list-style: none; }
+      #fh5co-contact .fh5co-contact-info li img {
+        left: 0;
+        position: absolute;
+        top: 0.4em;
+        height: 21px;
+        color: #5e493a; }
       #fh5co-contact .fh5co-contact-info li i {
         position: absolute;
         top: .4em;
