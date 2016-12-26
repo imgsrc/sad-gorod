@@ -459,8 +459,8 @@ p {
 }
 
 #fh5co-about {
-  @include flex;
-  @include flexwrap;
+  display: flex;
+  flex-wrap: wrap;
   background: lighten($brand-black, 90%);
   width: 100%;
   .fh5co-2col {
@@ -478,6 +478,9 @@ p {
     }
     .btn {
       color: $brand-white;
+      @media screen and (max-width: $screen-sm) {
+        margin-top: 10px;
+      }
     }
     .heading {
       margin-bottom: 30px;
@@ -513,6 +516,10 @@ p {
         position: relative;
         color: $brand-white;
         font-family: $font-primary;
+      }
+      @media screen and (max-width: $screen-sm) {
+        font-size: 15px;
+        margin-bottom: 10px;
       }
     }
   }
@@ -550,14 +557,14 @@ p {
             font-size: 25px;
             line-height: 1.5;
             @media screen and (max-width: $screen-sm) {
-              font-size: 20px;
+              font-size: 15px;
               line-height: 1.5;
             }
             &.quote-author {
               font-size: 20px;
               color: lighten($brand-black, 50%);
               @media screen and (max-width: $screen-sm) {
-                font-size: 18px;
+                font-size: 16px;
               }
             }
           }
@@ -569,7 +576,7 @@ p {
       &.flex-control-nav {
         bottom: -70px;
         @media screen and (max-width: $screen-sm) {
-          bottom: -60px;
+          bottom: 20px;
         }
       }
       li {
@@ -628,8 +635,8 @@ p {
   }
 
   .fh5co-grid {
-    @include flex;
-    @include flexwrap;
+    display: flex;
+    flex-wrap: wrap;
     h2 {
       font-size: 20px;
       margin-bottom: 0;
@@ -673,7 +680,7 @@ p {
           top: 0 !important;
           margin-top: -15px !important;
 
-          margin-left: 0px !important;
+          margin-left: 0 !important;
           border-top: none !important;
 
           border-left: 15px solid transparent !important;
@@ -712,7 +719,7 @@ p {
           top: 0 !important;
           margin-top: -15px !important;
 
-          margin-left: 0px !important;
+          margin-left: 0 !important;
           border-top: none !important;
 
           border-left: 15px solid transparent !important;
@@ -726,8 +733,8 @@ p {
       width: 50%;
       text-align: center;
       position: relative;
-      @include flex;
-      @include flexwrap;
+      display: flex;
+      flex-wrap: wrap;
       @media screen and (max-width: $screen-md) {
         width: 100%;
       }
@@ -768,8 +775,8 @@ p {
       > .fh5co-h-row-2 {
         width: 100%;
         position: relative;
-        @include flex;
-        @include flexwrap;
+        display: flex;
+        flex-wrap: wrap;
         > .fh5co-v-col-2 {
           width: 50%;
           position: relative;
@@ -1115,6 +1122,9 @@ p {
     }
     .sub-heading {
       color: #a99c92;
+      @media screen and (max-width: $screen-sm) {
+        font-size: 15px;
+      }
     }
   }
 

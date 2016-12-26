@@ -309,12 +309,12 @@ p {
 
 #fh5co-about {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
   background: #e6e6e6;
   width: 100%; }
   #fh5co-about .fh5co-2col {
@@ -331,6 +331,9 @@ p {
         padding: 1em; } }
     #fh5co-about .fh5co-text .btn {
       color: #fff; }
+      @media screen and (max-width: 768px) {
+        #fh5co-about .fh5co-text .btn {
+          margin-top: 10px; } }
     #fh5co-about .fh5co-text .heading {
       margin-bottom: 30px;
       color: #fff;
@@ -363,6 +366,10 @@ p {
         position: relative;
         color: #fff;
         font-family: "Playfair Display", serif; }
+      @media screen and (max-width: 768px) {
+        #fh5co-about .fh5co-text p {
+          font-size: 15px;
+          margin-bottom: 10px; } }
   #fh5co-about .fh5co-bg {
     background-repeat: no-repeat;
     background-size: cover; }
@@ -394,21 +401,21 @@ p {
         line-height: 1.5; }
         @media screen and (max-width: 768px) {
           #fh5co-sayings .flexslider .slides li blockquote p {
-            font-size: 20px;
+            font-size: 15px;
             line-height: 1.5; } }
         #fh5co-sayings .flexslider .slides li blockquote p.quote-author {
           font-size: 20px;
           color: gray; }
           @media screen and (max-width: 768px) {
             #fh5co-sayings .flexslider .slides li blockquote p.quote-author {
-              font-size: 18px; } }
+              font-size: 16px; } }
   #fh5co-sayings .flexslider .flex-control-paging {
     position: relative; }
     #fh5co-sayings .flexslider .flex-control-paging.flex-control-nav {
       bottom: -70px; }
       @media screen and (max-width: 768px) {
         #fh5co-sayings .flexslider .flex-control-paging.flex-control-nav {
-          bottom: -60px; } }
+          bottom: 20px; } }
     #fh5co-sayings .flexslider .flex-control-paging li a {
       width: 14px;
       height: 14px;
@@ -451,12 +458,12 @@ p {
     color: #a99c92; }
   #fh5co-featured .fh5co-grid {
     display: -webkit-box;
-    display: -ms-flexbox;
     display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-flex-wrap: wrap; }
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
     #fh5co-featured .fh5co-grid h2 {
       font-size: 20px;
       margin-bottom: 0; }
@@ -494,7 +501,7 @@ p {
           left: 15px !important;
           top: 0 !important;
           margin-top: -15px !important;
-          margin-left: 0px !important;
+          margin-left: 0 !important;
           border-top: none !important;
           border-left: 15px solid transparent !important;
           border-right: 15px solid transparent !important;
@@ -524,7 +531,7 @@ p {
           left: 15px !important;
           top: 0 !important;
           margin-top: -15px !important;
-          margin-left: 0px !important;
+          margin-left: 0 !important;
           border-top: none !important;
           border-left: 15px solid transparent !important;
           border-right: 15px solid transparent !important;
@@ -534,12 +541,12 @@ p {
       text-align: center;
       position: relative;
       display: -webkit-box;
-      display: -ms-flexbox;
       display: -webkit-flex;
+      display: -ms-flexbox;
       display: flex;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-      -webkit-flex-wrap: wrap; }
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; }
       @media screen and (max-width: 992px) {
         #fh5co-featured .fh5co-grid > .fh5co-v-half {
           width: 100%; } }
@@ -572,12 +579,12 @@ p {
         width: 100%;
         position: relative;
         display: -webkit-box;
-        display: -ms-flexbox;
         display: -webkit-flex;
+        display: -ms-flexbox;
         display: flex;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-        -webkit-flex-wrap: wrap; }
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap; }
         #fh5co-featured .fh5co-grid > .fh5co-v-half > .fh5co-h-row-2 > .fh5co-v-col-2 {
           width: 50%;
           position: relative;
@@ -850,6 +857,9 @@ p {
       margin-left: -24px; }
   #fh5co-contact .fh5co-heading .sub-heading {
     color: #a99c92; }
+    @media screen and (max-width: 768px) {
+      #fh5co-contact .fh5co-heading .sub-heading {
+        font-size: 15px; } }
   #fh5co-contact .fh5co-social {
     padding: 0;
     margin: 0; }
