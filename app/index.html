@@ -32,6 +32,8 @@
     
     <!-- Animate.css -->
     <link rel="stylesheet" href="css/animate.css">
+    <!-- Magnific-popup -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
     <!-- Icomoon Icon Fonts-->
     <link rel="stylesheet" href="css/icomoon.css">
     <!-- Simple Line Icons -->
@@ -102,6 +104,23 @@
         </div>
     </div>
     
+    <div class="mfp-content">
+        <form id="callback_modal" class="mfp-hide">
+        
+            <!-- Hidden Required Fields -->
+            <input type="hidden" name="project_name" value="Сад-Город">
+            <input type="hidden" name="admin_email" value="sadgorod.samara@mail.ru">
+            <input type="hidden" name="form_subject" value="Заказ обратного звонка">
+            <!-- END Hidden Required Fields -->
+            <input type="text" name="Имя" placeholder="Введите ваше имя" required><br>
+            <input type="tel" name="Телефон" placeholder="Ваш телефон" required><br>
+            <textarea name="Комментарий" placeholder="Комментарий (не обязательно)"></textarea>
+            <p class="text-center"><button id="subm" class="btn btn-primary btn-outline btn_phone">Отправить</button></p>
+            <h3 class="success">Спасибо, мы обязательно свяжемся с вами!</h3>
+    
+        </form>
+    </div>
+    
     <div id="fh5co-about" data-section="about">
         <div class="fh5co-2col fh5co-bg to-animate-2"
              style="background-image: url(img/prod/village/koz.jpg)"></div>
@@ -115,7 +134,7 @@
                 деревни прямо к Вашему столу.
             </p>
             <a href="https://vk.com/topic-122320938_34402839" target="_blank">Читать далее...</a>
-            <p class="text-center to-animate"><a href="#" class="btn btn-primary btn-outline">Связаться с нами</a></p>
+            <p class="text-center to-animate"><a href="#callback_modal" class="btn btn-primary btn-outline mfp-popup" data-toggle="modal">Связаться с нами</a></p>
         </div>
     </div>
     
@@ -329,6 +348,8 @@
                         </div>
                     </div>
                 </div><!-- ./Мёд -->
+            </div>
+            <div class="row row-padded">
                 <div class="col-md-6">
                     <div class="fh5co-food-menu to-animate-2">
                         <h2 class="fh5co-milk">Молочная продукция</h2>
@@ -446,16 +467,16 @@
                 </div><!-- ./Молочная продукция -->
                 <div class="col-md-6">
                     <div class="fh5co-food-menu to-animate-2">
-                        <h2 class="fh5co-meat">Мясная продукция</h2>
+                        <h2 class="fh5co-pets">Корма для собак и кошек</h2>
                         <div class="ul">
                             <div class="li">
                                 <div class="fh5co-food-desc">
                                     <figure>
-                                        <img src="img/prod/village/krol.jpg" class="img-responsive"
-                                             alt="Кролик охлажденный">
+                                        <img src="img/prod/village/knizhka.jpg" class="img-responsive"
+                                             alt="Молоко коровье">
                                     </figure>
                                     <div>
-                                        <h3>Кролик охлажденный</h3>
+                                        <h3>Книжка говяжья</h3>
                                         <p>Far far away, behind the word mountains.</p>
                                     </div>
                                 </div>
@@ -463,11 +484,11 @@
                             <div class="li">
                                 <div class="fh5co-food-desc">
                                     <figure>
-                                        <img src="img/prod/village/gus.jpg" class="img-responsive"
-                                             alt="Гусь горячего копчения">
+                                        <img src="img/prod/village/legkoe.jpg" class="img-responsive"
+                                             alt="Творог обезжиренный ЗОЖ">
                                     </figure>
                                     <div>
-                                        <h3>Гусь горячего копчения</h3>
+                                        <h3>Легкое говяжье</h3>
                                         <p>Far far away, behind the word mountains.</p>
                                     </div>
                                 </div>
@@ -475,11 +496,11 @@
                             <div class="li">
                                 <div class="fh5co-food-desc">
                                     <figure>
-                                        <img src="img/prod/village/res_img_1.jpg" class="img-responsive"
-                                             alt="Гусь охлажденный">
+                                        <img src="img/prod/village/traheya.jpg" class="img-responsive"
+                                             alt="Сгущенка от Регины Игнатьевны">
                                     </figure>
                                     <div>
-                                        <h3>Гусь охлажденный</h3>
+                                        <h3>Трахея говяжья</h3>
                                         <p>Far far away, behind the word mountains.</p>
                                     </div>
                                 </div>
@@ -487,24 +508,137 @@
                             <div class="li">
                                 <div class="fh5co-food-desc">
                                     <figure>
-                                        <img src="img/prod/village/perep.jpg" class="img-responsive"
-                                             alt="Перепела от Никиты Заикина">
+                                        <img src="img/prod/village/pochki.jpg" class="img-responsive"
+                                             alt="Масло сливочное">
                                     </figure>
                                     <div>
-                                        <h3>Перепела от Никиты Заикина</h3>
+                                        <h3>Почки говяжьи</h3>
+                                        <p>Far far away, behind the word mountains.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="li">
+                                <div class="fh5co-food-desc">
+                                    <figure>
+                                        <img src="img/prod/village/eggsByk.jpg" class="img-responsive"
+                                             alt="Сыр АССОРТИ">
+                                    </figure>
+                                    <div>
+                                        <h3>Яйца бычьи</h3>
+                                        <p>Far far away, behind the word mountains.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="li">
+                                <div class="fh5co-food-desc">
+                                    <figure>
+                                        <img src="img/prod/village/hvost.jpg" class="img-responsive"
+                                             alt="Белпер Кнолле">
+                                    </figure>
+                                    <div>
+                                        <h3>Хвост говяжий</h3>
+                                        <p>Far far away, behind the word mountains.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="li">
+                                <div class="fh5co-food-desc">
+                                    <figure>
+                                        <img src="img/prod/village/rubetc.jpg" class="img-responsive"
+                                             alt="Топленое молоко">
+                                    </figure>
+                                    <div>
+                                        <h3>Рубец говяжий</h3>
+                                        <p>Far far away, behind the word mountains.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="li">
+                                <div class="fh5co-food-desc">
+                                    <figure>
+                                        <img src="img/prod/village/obrezGolov.jpg" class="img-responsive"
+                                             alt="Сметана деревенская">
+                                    </figure>
+                                    <div>
+                                        <h3>Обрез с говяжьих голов</h3>
+                                        <p>Far far away, behind the word mountains.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="li">
+                                <div class="fh5co-food-desc">
+                                    <figure>
+                                        <img src="img/prod/village/vymja.jpg" class="img-responsive"
+                                             alt="Козье молоко">
+                                    </figure>
+                                    <div>
+                                        <h3>Вымя говяжье</h3>
                                         <p>Far far away, behind the word mountains.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div><!-- ./Мясо птицы -->
-                
+                </div><!-- ./Корма для собак и кошек -->
             </div>
-            
+                <div class="col-md-6">
+                <div class="fh5co-food-menu to-animate-2">
+                    <h2 class="fh5co-meat">Мясная продукция</h2>
+                    <div class="ul">
+                        <div class="li">
+                            <div class="fh5co-food-desc">
+                                <figure>
+                                    <img src="img/prod/village/krol.jpg" class="img-responsive"
+                                         alt="Кролик охлажденный">
+                                </figure>
+                                <div>
+                                    <h3>Кролик охлажденный</h3>
+                                    <p>Far far away, behind the word mountains.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="li">
+                            <div class="fh5co-food-desc">
+                                <figure>
+                                    <img src="img/prod/village/gus.jpg" class="img-responsive"
+                                         alt="Гусь горячего копчения">
+                                </figure>
+                                <div>
+                                    <h3>Гусь горячего копчения</h3>
+                                    <p>Far far away, behind the word mountains.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="li">
+                            <div class="fh5co-food-desc">
+                                <figure>
+                                    <img src="img/prod/village/res_img_1.jpg" class="img-responsive"
+                                         alt="Гусь охлажденный">
+                                </figure>
+                                <div>
+                                    <h3>Гусь охлажденный</h3>
+                                    <p>Far far away, behind the word mountains.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="li">
+                            <div class="fh5co-food-desc">
+                                <figure>
+                                    <img src="img/prod/village/perep.jpg" class="img-responsive"
+                                         alt="Перепела от Никиты Заикина">
+                                </figure>
+                                <div>
+                                    <h3>Перепела от Никиты Заикина</h3>
+                                    <p>Far far away, behind the word mountains.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- ./Мясо птицы -->
             <div class="row">
                 <div class="col-md-4 col-md-offset-4 text-center to-animate-2">
-                    <p><a href="#" class="btn btn-primary btn-outline">Связаться с нами</a></p>
+                    <p><a href="#callback_modal" class="btn btn-primary btn-outline mfp-popup">Связаться с нами</a></p>
                 </div>
             </div>
         </div>
@@ -647,7 +781,7 @@
         </div>
     </div>
     
-    <div id="fh5co-events" data-section="farm" style="background-image: url(img/cx.jpg);"
+    <div id="fh5co-events" data-section="farm" style="background-image: url(img/slide_2.jpg);"
          data-stellar-background-ratio="0.5">
         <div class="fh5co-overlay"></div>
         <div class="container">
@@ -768,31 +902,36 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-6 to-animate-2">
+                <form id="order_form" class="col-md-6 to-animate-2">
+                    <!-- Hidden Required Fields -->
+                    <input type="hidden" name="project_name" value="Сад-Город">
+                    <input type="hidden" name="admin_email" value="sadgorod.samara@mail.ru">
+                    <input type="hidden" name="form_subject" value="Форма заказа">
+                    <!-- END Hidden Required Fields -->
                     <h3>Форма заказа</h3>
                     <div class="form-group ">
                         <label for="name" class="sr-only">Name</label>
-                        <input id="name" class="form-control" placeholder="Имя" type="text">
+                        <input id="name" class="form-control" name="Имя" placeholder="Имя" type="text">
                     </div>
                     <div class="form-group ">
                         <label for="phone" class="sr-only">Email</label>
-                        <input id="phone" class="form-control" placeholder="Телефон" type="tel">
+                        <input id="phone" class="form-control" name="Телефон" placeholder="Телефон" type="tel">
                     </div>
                     <div class="form-group ">
                         <label for="date" class="sr-only">Date</label>
-                        <input id="date" class="form-control" placeholder="Дата &amp; время" type="text">
+                        <input id="date" class="form-control" name="Дата" placeholder="Дата &amp; время" type="text">
                     </div>
                     
                     
                     <div class="form-group ">
                         <label for="message" class="sr-only">Message</label>
-                        <textarea name="" id="message" cols="30" rows="5" class="form-control"
+                        <textarea name="Сообщение" id="message" cols="30" rows="5" class="form-control"
                                   placeholder="Сообщение"></textarea>
                     </div>
                     <div class="form-group ">
                         <input class="btn btn-primary" value="Заказать" type="submit">
                     </div>
-                </div>
+                </form>
             </div>
         </div>
     </div>
@@ -800,25 +939,25 @@
 
 </div>
 
-<div id="fh5co-footer">
-    <div class="container">
-        <div class="row row-padded">
-            <div class="col-md-12 text-center">
-                
-                <p class="text-center to-animate"><a href="#" class="js-gotop">Go To Top</a></p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <ul class="fh5co-social">
-                    <li class="to-animate-2"><a href="#"><i class="icon-facebook"></i></a></li>
-                    <li class="to-animate-2"><a href="#"><i class="icon-twitter"></i></a></li>
-                    <li class="to-animate-2"><a href="#"><i class="icon-instagram"></i></a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
+<!--<div id="fh5co-footer">-->
+    <!--<div class="container">-->
+        <!--<div class="row row-padded">-->
+            <!--<div class="col-md-12 text-center">-->
+                <!---->
+                <!--<p class="text-center to-animate"><a href="#" class="js-gotop">Go To Top</a></p>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="row">-->
+            <!--<div class="col-md-12 text-center">-->
+                <!--<ul class="fh5co-social">-->
+                    <!--<li class="to-animate-2"><a href="#"><i class="icon-facebook"></i></a></li>-->
+                    <!--<li class="to-animate-2"><a href="#"><i class="icon-twitter"></i></a></li>-->
+                    <!--<li class="to-animate-2"><a href="#"><i class="icon-instagram"></i></a></li>-->
+                <!--</ul>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
 
 
 <!-- jQuery -->
@@ -835,6 +974,9 @@
 <!-- Stellar Parallax -->
 <script src="js/jquery.stellar.min.js"></script>
 
+<!-- Magnific-popup -->
+<script src="js/jquery.magnific-popup.min.js"></script>
+
 <!-- Flexslider -->
 <script src="js/jquery.flexslider-min.js"></script>
 <script>
@@ -844,6 +986,7 @@
 </script>
 <!-- Main JS -->
 <script src="js/main.js"></script>
+<script src="js/common.js"></script>
 
 </body>
 </html>
