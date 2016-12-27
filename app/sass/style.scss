@@ -849,11 +849,14 @@ p {
     font-style: italic;
   }
   h3 {
-    margin-top: 20px;
-    font-size: 26px;
-    color: lightseagreen;
+    font-size: 20px;
+    font-weight:bold;
+    color: $brand-primary;
     text-align: center;
     display: none;
+    position: absolute;
+    padding-right: 25px;
+    bottom: 20px;
   }
 }
 

@@ -595,7 +595,7 @@
                 setTimeout(function () {
                     $.magnificPopup.close();
                     th.trigger("reset");
-                }, 1500);
+                }, 1000);
             });
             return false;
         });
@@ -611,7 +611,7 @@
                 alert("Спасибо за заказ, мы свяжемся с вами!")
                 setTimeout(function () {
                     th.trigger("reset");
-                }, 1500);
+                }, 1000);
             });
             return false;
         });

@@ -643,11 +643,14 @@ p {
     text-overflow: ellipsis;
     font-style: italic; }
   #callback_modal h3 {
-    margin-top: 20px;
-    font-size: 26px;
-    color: lightseagreen;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fb6e14;
     text-align: center;
-    display: none; }
+    display: none;
+    position: absolute;
+    padding-right: 25px;
+    bottom: 20px; }
 
 #fh5co-menus {
   padding: 7em 0; }
