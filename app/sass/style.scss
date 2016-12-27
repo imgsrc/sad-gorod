@@ -95,6 +95,7 @@ $font-secondary: 'Merriweather', serif;
 // Import 
 @import 'bootstrap/mixins';
 @import 'bootstrap/variables';
+@import '../../bourbon/bourbon';
 
 body {
   font-family: $font-secondary;
@@ -290,9 +291,10 @@ p {
       top: 50%;
       margin-top: -212px;
       text-align: center;
-
-      @media screen and (max-width: $screen-sm) {
-        // margin-top: -66px;
+      .logo {
+        @media screen and (max-width: $screen-sm) {
+          margin-bottom: 25px;
+        }
       }
       h1 {
         margin: 0;
@@ -304,7 +306,11 @@ p {
         color: $brand-white;
         @include transition(.3s);
         @media screen and (max-width: $screen-md) {
-          font-size: 100px;
+          font-size: 80px;
+        }
+        @media screen and (max-width: $screen-sm) {
+          font-size: 65px;
+          margin-bottom: 15px;
         }
       }
       h2 {
@@ -354,6 +360,7 @@ p {
       display: none;
     }
   }
+
 }
 
 .fh5co-main-nav {
@@ -816,7 +823,7 @@ p {
 #fh5co-menus {
   padding: 7em 0;
   @media screen and (max-width: $screen-sm) {
-    padding: 5em 0;
+    padding: 2em 0;
   }
 
   .fh5co-heading {
@@ -934,10 +941,10 @@ p {
       }
 
     }
-    ul {
+    .ul {
       padding: 0;
       margin: 0;
-      li {
+      .li {
         padding: 0 0 20px 0;
         margin: 0 0 20px 0;
         border-bottom: 1px dotted #ccc;
@@ -1036,7 +1043,7 @@ p {
     padding: 5em 0;
   }
   .fh5co-event {
-    background: $brand-white;
+    background: #d2cfa8;
     padding: 50px;
     text-align: center;
     margin-bottom: 30px;
