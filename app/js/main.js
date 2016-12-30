@@ -608,7 +608,7 @@
                 url: "mail.php", //Change
                 data: th.serialize()
             }).done(function () {
-                alert("Спасибо за заказ, мы свяжемся с вами!")
+                alert("Спасибо за заказ, мы свяжемся с вами!");
                 setTimeout(function () {
                     th.trigger("reset");
                 }, 1000);
