@@ -615,6 +615,8 @@
             });
             return false;
         });
+
+        $(".fh5co-food-menu .li").equalHeights();
     });
 
 

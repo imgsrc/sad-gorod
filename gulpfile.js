@@ -1,6 +1,3 @@
-/**
- * Created by esx on 10.11.2016.
- */
 var gulp = require('gulp');
 var scss = require('gulp-ruby-sass');
 var browserSync = require('browser-sync');
@@ -24,7 +21,7 @@ var path = {
 gulp.task('scss', function () {
     return scss(path.src.scss)
         .on('error', scss.logError)
-        .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], {cascade: true})) // Создаем префиксы
+        .pipe(autoprefixer(['last 5 versions', '> 1%', 'ie 8', 'ie 7'], {cascade: true})) // Создаем префиксы
         .pipe(gulp.dest('app/css'))
         .pipe(browserSync.reload({stream: true})); // Обновляем CSS на странице при изменении;
 });
